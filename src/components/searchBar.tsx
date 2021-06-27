@@ -29,16 +29,16 @@ const SearchBar = ({}) => {
   return (
     <div>
       <div>
-        <p>Type in any color</p>
+        <h2>Type in a color</h2>
         <input value={value} onChange={handleChange}/>
       </div>
       <div>
       <br />
-        Debounced:
+        <h2>Debounced</h2>
         <div className="square" style={{ backgroundColor:  debounced }} />
         <p>{debounced}</p>
         <br />
-        Throttled:
+        <h2>Throttled</h2>
         <div className="square" style={{ backgroundColor:  throttled }} />
         <p>{throttled}</p>
       </div>
